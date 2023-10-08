@@ -1,5 +1,6 @@
 import React from 'react';
-import "./channelInput.css"
+import "./channelInput.css";
+import styled from "styled-components";
 
 export const ChannelInput = ({channel}) => {
     const {name, icon, id} = channel;
@@ -11,8 +12,8 @@ export const ChannelInput = ({channel}) => {
                 type="checkbox"
                 id={`'channelID: '${id}`}
             />
-             <label for={`'channelID: '${id}`} className='channelLabel'> 
-                {icon && <img className="channelLabel__icon" src={icon} alt="channel icon" height="50px" width="50px"></img>}
+             <label htmlFor={`'channelID: '${id}`} className='channelLabel'> 
+                {icon && <img className="channelLabel__icon" src={icon} alt="channel icon" height="50" width="60"></img>}
                 <p>{name}</p>
               </label>  
         </div>

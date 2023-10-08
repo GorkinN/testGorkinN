@@ -7,7 +7,8 @@ export const ChannelsForm = ({channelsMap}) => {
         let channelsArr = Array.from(channelsMap.values());
         return (
           <>
-            {channelsArr.map(channel => <ChannelInput 
+            {channelsArr.map(channel => <ChannelInput
+            key={`form key:${channel.id}`} 
             channel={channel}
             />)}
           </>
