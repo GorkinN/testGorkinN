@@ -1,5 +1,6 @@
 import React from 'react';
 import { ChannelInput } from './channelInput/channelInput';
+import './channelsForm.css'
 
 export const ChannelsForm = ({channelsMap}) => {
     function populateForm(channelsMap) {
@@ -7,16 +8,14 @@ export const ChannelsForm = ({channelsMap}) => {
         return (
           <>
             {channelsArr.map(channel => <ChannelInput 
-            channelNameLabel={channel.name}
-            id={"channelID: "+channel.id}
-            icon={channel.icon}
+            channel={channel}
             />)}
           </>
         );
       }
         
     return (
-        <form name="ChannelsForm">
+        <form name="ChannelsForm" className='ChannelsForm'>
             {populateForm(channelsMap)}           
         </form>
     );

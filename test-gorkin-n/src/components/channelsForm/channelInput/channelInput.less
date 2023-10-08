@@ -1,0 +1,41 @@
+.channelInputBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+
+}
+.channelLabel {
+    display: flex;
+    flex-grow: 1;
+
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    border:2px solid rgba(175, 175, 175, 0.5);
+    border-radius: 20px;
+    padding: 0 5px;
+}
+.channelLabel > p {
+    text-align: center;
+    padding:0 3px;
+    max-width:10em;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+:checked ~ .channelLabel {
+    background-color: rgba(87, 171, 87, 0.3);
+    border:2px solid  rgba(87, 171, 87, 1);
+}
+
+.channelLabel__checkbox {
+    display: none;
+    
+}
+.channelLabel__icon {
+    object-fit: contain;
+    padding:0 5px;
+    justify-self: flex-start;
+    
+}
