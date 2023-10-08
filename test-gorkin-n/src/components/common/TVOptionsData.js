@@ -10,4 +10,15 @@ function getChannelsList(TVoptionsArr) {
 
     return tvChannelsMap;
   }
+
 export const channelsMap = getChannelsList(TVOptionsArr);
+
+function getTVoptionsMap(obj) {
+  const TVoptionsMap = new Map();
+  for (let item of obj) {
+    TVoptionsMap.set(item, item.channels.map(channel => channel.id))
+  }
+  return TVoptionsMap;
+}
+
+export const TVoptionsMap = getTVoptionsMap(TVOptionsArr);

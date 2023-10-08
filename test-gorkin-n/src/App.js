@@ -2,13 +2,15 @@
 import './App.css';
 import { channelsMap } from './components/common/TVOptionsData';
 import { ChannelsForm } from './components/channelsForm/channelsForm';
+import { TVoptionsSection } from './components/TVoptionsSection/TVoptionsSection';
 
 function App() {
   
   return (
-    <div>
-      <ChannelsForm channelsMap={channelsMap}></ChannelsForm>
-    </div>
+    <main className='wrapper'>
+      <TVoptionsSection></TVoptionsSection>
+      <ChannelsForm channelsMap={channelsMap}/>
+    </main>
   );
 }
 
