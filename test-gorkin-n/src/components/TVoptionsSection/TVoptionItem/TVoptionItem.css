@@ -1,0 +1,8 @@
+.TVoptionItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+}
