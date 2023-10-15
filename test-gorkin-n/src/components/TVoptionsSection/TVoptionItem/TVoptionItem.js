@@ -6,13 +6,10 @@ export const TVoption = ({TVoption}) => {
 
     return (
         <li className='TVoptionItem' data-optionID={id}>
-            <p>{name}</p>
-            <p>{short}</p>
-            <div>
-                <p>Цена: {price}</p>
-                <button>КУПИТЬ</button>
-            </div>
-
+            <p className='TVoptionItem__title'>{name}</p>
+            <p className='TVoptionItem__description'>{short}</p>
+            <p className='TVoptionItem__price'>Цена: {price} руб./мес.</p>
+            <button className='TVoptionItem__buy-button'>выбрать</button>
         </li>
     );
 }

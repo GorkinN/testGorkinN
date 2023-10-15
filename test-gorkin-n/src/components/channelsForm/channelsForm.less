@@ -1,8 +1,24 @@
+@import "../common/theme.less";
+
 .ChannelsForm {
     display:grid;
     grid-template-columns: repeat(auto-fit, 230px);
     grid-gap: 25px;
     justify-content: space-between;
 }
-
-
+@media(max-width:@laptop) {
+    .ChannelsForm {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+}
+@media(max-width:@tablet) {
+    .ChannelsForm {
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
+}
+@media(max-width:@mobile-L) {
+    .ChannelsForm {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+}

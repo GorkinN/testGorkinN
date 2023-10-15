@@ -1,8 +1,61 @@
+.default-override {
+  padding: 10px 0;
+  margin: 0 0;
+}
+.TVoption-textbox-settings {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
 .TVoptionItem {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 2px solid gray;
+  border: 2px solid #649e64;
   border-radius: 20px;
   padding: 10px;
+  transition: 0.2s ease-in;
+}
+.TVoptionItem:hover {
+  background-color: #dfefdf;
+}
+.TVoptionItem__title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  margin: 0 0;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.TVoptionItem__description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  margin: 0 0;
+  font-weight: 500;
+}
+.TVoptionItem__price {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 10px 0;
+  margin: 0 0;
+}
+.TVoptionItem__buy-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 5px 0;
+  background-color: #f0f8f0;
+  border: 2px solid #9bcd9b;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.TVoptionItem__buy-button:hover {
+  background-color: #bddebd;
+}
+.TVoptionItem__buy-button:active {
+  background-color: #8ac48a;
 }

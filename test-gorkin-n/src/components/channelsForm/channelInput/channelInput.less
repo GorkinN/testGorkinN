@@ -1,5 +1,6 @@
-@selectedColor:rgba(87, 171, 87, 1);
-@initialColor:rgba(87, 171, 87, 0.1);
+@import "../../common/theme.less";
+@selectedColor:@main-color;
+@initialColor:@secondary-color;
 
 
 .channelInputBox {
@@ -7,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
-    border-radius: 20px;
+    border-radius: @main-border-radius;
 }
 .channelInputBox:hover {
     background-color: @initialColor;
@@ -21,7 +22,7 @@
     justify-content: space-evenly;
     height: 100%;
     border:2px solid @initialColor;
-    border-radius: 20px;
+    border-radius: @main-border-radius;
     padding: 0 5px;
     
 }

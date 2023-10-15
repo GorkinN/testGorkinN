@@ -4,3 +4,19 @@
   grid-gap: 25px;
   justify-content: space-between;
 }
+@media (max-width: 1024px) {
+  .ChannelsForm {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
+@media (max-width: 768px) {
+  .ChannelsForm {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+}
+@media (max-width: 425px) {
+  .ChannelsForm {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}

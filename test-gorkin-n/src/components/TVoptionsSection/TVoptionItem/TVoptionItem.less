@@ -1,8 +1,57 @@
+@import "../../common/theme.less";
+@title-font-size:1.5rem;
+
+.default-override {
+    padding: 10px 0;
+    margin: 0 0;
+}
+.TVoption-textbox-settings {
+    font-family: @main-font-family;
+    font-weight: 700;  
+    font-size:@title-font-size - 0.3rem;
+    }
+
 .TVoptionItem {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    border:2px solid gray;
+    border:2px solid desaturate(@main-color, 10%);
     border-radius: 20px;
     padding:10px;
+    transition: 0.2s ease-in;
+}
+.TVoptionItem:hover {
+    background-color:  lighten(@main-color,40%);
+}
+
+.TVoptionItem__title {
+    .TVoption-textbox-settings;
+    .default-override;
+    font-size:@title-font-size;
+    text-align: center;
+}
+ .TVoptionItem__description {
+    .TVoption-textbox-settings;
+    .default-override;
+    font-weight: 500;
+ }
+
+ .TVoptionItem__price {
+    .TVoption-textbox-settings;
+    .default-override;
+ }
+
+ .TVoptionItem__buy-button {
+    .TVoption-textbox-settings;
+    padding:5px 0;
+    background-color: lighten(@main-color, 45%);
+    border: 2px solid lighten(@main-color, 20%);
+    border-radius: @main-border-radius;
+    font-weight: 600;
+ }
+ .TVoptionItem__buy-button:hover {
+    background-color: lighten(@main-color, 30%);
+     }
+.TVoptionItem__buy-button:active{
+    background-color: lighten(@main-color, 15%);
 }
