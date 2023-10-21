@@ -10,9 +10,6 @@
     min-height: 70px;
     border-radius: @main-border-radius;
 }
-.channelInputBox:hover {
-    background-color: @initialColor;
-}
 
 .channelLabel {
     display: flex;
@@ -24,11 +21,11 @@
     border:2px solid @initialColor;
     border-radius: @main-border-radius;
     padding: 0 5px;
-    
+    cursor:pointer;
 }
 
 .channelLabel > p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:@main-font-family;
     font-size: 1.1rem;
     text-align: center;
     padding:0 3px;
