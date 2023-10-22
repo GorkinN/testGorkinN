@@ -22,3 +22,16 @@ function getTVoptionsMap(obj) {
 }
 
 export const TVoptionsMap = getTVoptionsMap(TVOptionsArr);
+
+function formUniqueChannelsArr (TVoptionsMap, channelsMap) {
+  let uniqueChannelsArr = [];
+  Array.from(channelsMap.keys()).forEach(channelID => {
+    let isUnique = true;
+    
+    for (let entry of TVoptionsMap.entries()) {
+                  
+    }    
+  }); 
+
+}
+ const uniqueChannelsOptions = formUniqueChannelsArr(TVoptionsMap, channelsMap);

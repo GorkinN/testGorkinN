@@ -7,11 +7,11 @@ import { TVoptionsSection } from './components/TVoptionsSection/TVoptionsSection
 
 
 function App() {
-   const [selectedChannelList, setSelectedChannelList] = useState([]);
+   const [selectedChannelsList, setSelectedChannelList] = useState([]);
   
   return (
     <main className='wrapper'>
-      <TVoptionsSection selectedChannels={selectedChannelList}/>
+      <TVoptionsSection selectedChannels={selectedChannelsList}/>
       <ChannelsForm channelsMap={channelsMap} setSelectedChannelList={setSelectedChannelList}/>
     </main>
   );
