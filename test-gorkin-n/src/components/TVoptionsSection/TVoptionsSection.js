@@ -7,7 +7,6 @@ import "./TVoptionsSection.css";
 export const TVoptionsSection = (selectedChannels) => {
 
     function formTVoptionsArr (TVoptionsMap, selectedChannels) {
-        console.log(TVoptionsMap);
         const TVoptionsArr = Array.from(TVoptionsMap.keys());
         return TVoptionsArr.map(item => <TVoption TVoption={item} key = {`TVoptionKey:${item.id}`}></TVoption>);
     }

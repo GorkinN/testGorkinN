@@ -10,9 +10,9 @@ export const ChannelInput = ({channel}) => {
                 className="channelLabel__checkbox" 
                 name="channelSelect" 
                 type="checkbox"
-                id={`'channelID: '${id}`}
+                id={`${id}`}
             />
-             <label htmlFor={`'channelID: '${id}`} className='channelLabel'> 
+             <label htmlFor={`${id}`} className='channelLabel'> 
                 {icon && <img className="channelLabel__icon" src={icon} alt="channel icon" height="50" width="60"></img>}
                 <p>
                     {name}
