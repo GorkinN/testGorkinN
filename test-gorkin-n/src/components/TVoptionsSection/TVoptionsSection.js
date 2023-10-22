@@ -36,6 +36,7 @@ export const TVoptionsSection = ({selectedChannels}) => {
     
     return (
         <section className='TVoptionsSection'>
+            <h1 className='TVoptionsSection__caption'>Пакеты каналов</h1>
             <ul className='TVoptionsList'>
                 {TVoptionsList.length>0 ? TVoptionsList : <p>Пакета с таким набором каналов, к сожалению, не существует</p>}
             </ul>                                                

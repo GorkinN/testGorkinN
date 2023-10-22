@@ -1,5 +1,9 @@
+@import "../common/theme.less";
+
 .TVoptionsSection {
-    padding:15px 0;    
+    padding:15px 0; 
+    margin: 0 0 15px 0;  
+    border-bottom:  1px dashed @main-color; 
 }
 .TVoptionsList {
     display:grid;
@@ -8,4 +12,22 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+}
+
+.TVoptionsSection__caption {
+    .caption-h1;
+    text-align: center;
+    padding-bottom:15px;
+    margin: 0;
+}
+
+@media (max-width:@laptop) {
+    .TVoptionsList {    
+        grid-template-columns: 1fr 1fr;
+    } 
+}
+@media (max-width:@mobile-L) {
+    .TVoptionsList {    
+        grid-template-columns: 1fr;
+    } 
 }

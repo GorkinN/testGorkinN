@@ -2,12 +2,22 @@
 @secondary-color:rgba(87, 171, 87, 0.1);
 @main-border-radius:20px;
 @main-font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-
-//for @media adaptive
+//for @media queries adaptive
 @laptop-L:1440px;
 @laptop:1024px;
 @tablet:768px;
 @mobile-L:425px;
 @mobile:375px;
 @mobile-S:320px;
+
+//captions
+.caption-h1 {
+    font-family: @main-font-family;
+    font-size: 1.7rem;
+    color: darken(@main-color, 25%);
+}
+.caption-h2 {
+    font-family: @main-font-family;
+    font-size: 1.3rem;
+    color: darken(@main-color, 25%);
+}

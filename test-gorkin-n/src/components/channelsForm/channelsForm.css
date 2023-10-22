@@ -1,8 +1,25 @@
+.caption-h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  color: #2c572c;
+}
+.caption-h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  color: #2c572c;
+}
 .ChannelsForm {
   display: grid;
   grid-template-columns: repeat(auto-fit, 230px);
   grid-gap: 25px;
   justify-content: space-between;
+}
+.ChannelsForm-caption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  color: #2c572c;
+  padding: 10px;
+  margin: 0;
 }
 @media (max-width: 1024px) {
   .ChannelsForm {

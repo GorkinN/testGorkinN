@@ -1,5 +1,12 @@
+.caption-h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  color: #2c572c;
+}
 .TVoptionsSection {
   padding: 15px 0;
+  margin: 0 0 15px 0;
+  border-bottom: 1px dashed #57ab57;
 }
 .TVoptionsList {
   display: grid;
@@ -8,4 +15,22 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+.TVoptionsSection__caption {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  color: #2c572c;
+  text-align: center;
+  padding-bottom: 15px;
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .TVoptionsList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 425px) {
+  .TVoptionsList {
+    grid-template-columns: 1fr;
+  }
 }

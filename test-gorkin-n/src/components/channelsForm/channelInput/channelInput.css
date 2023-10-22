@@ -1,3 +1,13 @@
+.caption-h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.7rem;
+  color: #2c572c;
+}
+.caption-h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  color: #2c572c;
+}
 .channelInputBox {
   display: flex;
   justify-content: space-between;
@@ -21,7 +31,7 @@
   font-size: 1.1rem;
   text-align: center;
   padding: 0 3px;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 :checked ~ .channelLabel {
   transition: 0.1s ease-in-out;

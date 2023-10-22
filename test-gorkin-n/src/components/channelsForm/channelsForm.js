@@ -3,17 +3,6 @@ import { ChannelInput } from './channelInput/channelInput';
 import './channelsForm.css'
 
 export const ChannelsForm = ({channelsMap, setSelectedChannelList}) => {
-  /*
-  setTimeout(()=>{
-    let channelsForm$$$ = document.forms.ChannelsForm;
-    console.log("elmts",ChannelsForm.elements)
-      Array.from(channelsForm$$$.elements).forEach(element => {
-        element.checked = true;
-      }); 
-  });
-  */
-  
-
   let onChange = () => {
     let channelsForm = document.forms.ChannelsForm;
 
@@ -31,9 +20,12 @@ export const ChannelsForm = ({channelsMap, setSelectedChannelList}) => {
     }
         
     return (
+      <>
+        <p className='ChannelsForm-caption'>Выберите желаемые каналы:</p>
         <form name="ChannelsForm" className='ChannelsForm' onChange={() => onChange()}>
             {populateForm(channelsMap)}           
         </form>
+      </>
     );
 }
 
