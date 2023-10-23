@@ -8,12 +8,16 @@
 .TVoptionsList {
     display:grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     margin: 0;
     padding: 0;
 }
-
+@media (max-width:@mobile-L) {
+    .TVoptionsList {    
+        grid-template-columns: 1fr;
+    } 
+}
 .TVoptionsSection__caption {
     .caption-h1;
     text-align: center;
@@ -21,13 +25,4 @@
     margin: 0;
 }
 
-@media (max-width:@laptop) {
-    .TVoptionsList {    
-        grid-template-columns: 1fr 1fr;
-    } 
-}
-@media (max-width:@mobile-L) {
-    .TVoptionsList {    
-        grid-template-columns: 1fr;
-    } 
-}
+

@@ -3,6 +3,11 @@
   font-size: 1.7rem;
   color: #2c572c;
 }
+.caption-h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  color: #2c572c;
+}
 .TVoptionsSection {
   padding: 15px 0;
   margin: 0 0 15px 0;
@@ -11,10 +16,15 @@
 .TVoptionsList {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 425px) {
+  .TVoptionsList {
+    grid-template-columns: 1fr;
+  }
 }
 .TVoptionsSection__caption {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,14 +33,4 @@
   text-align: center;
   padding-bottom: 15px;
   margin: 0;
-}
-@media (max-width: 1024px) {
-  .TVoptionsList {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 425px) {
-  .TVoptionsList {
-    grid-template-columns: 1fr;
-  }
 }
