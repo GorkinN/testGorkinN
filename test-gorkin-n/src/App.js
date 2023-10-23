@@ -1,13 +1,19 @@
 //import logo from './logo.svg';
-import { useState } from 'react'; 
+import { useState, useEffect } from 'react'; 
 import './App.css';
 import { channelsMap } from './components/common/TVOptionsData';
 import { ChannelsForm } from './components/channelsForm/channelsForm';
 import { TVoptionsSection } from './components/TVoptionsSection/TVoptionsSection';
+import { showVisible } from './components/common/showVisible';
 
 
 function App() {
    const [selectedChannelsList, setSelectedChannelList] = useState([]);
+
+   useEffect(()=>{ 
+    showVisible();
+    window.addEventListener('scroll', showVisible) 
+  })
   
   return (
     <main className='wrapper'>

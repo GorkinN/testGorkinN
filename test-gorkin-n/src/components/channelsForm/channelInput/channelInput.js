@@ -13,7 +13,7 @@ export const ChannelInput = ({channel}) => {
                 id={`${id}`}
             />
              <label htmlFor={`${id}`} className='channelLabel'> 
-                {icon && <img className="channelLabel__icon" src={icon} alt="channel icon" height="50" width="60"></img>}
+                {icon && <img className="channelLabel__icon" data-src={icon} alt="channel icon" height="50" width="60" loading='lazy'></img>}
                 <p>
                     {name}
                 </p>
