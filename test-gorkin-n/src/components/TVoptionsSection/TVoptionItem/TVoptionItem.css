@@ -24,7 +24,6 @@
   border: 2px solid #649e64;
   border-radius: 20px;
   padding: 10px;
-  margin: 10px;
   transition: 0.2s ease-in;
 }
 .TVoptionItem:hover {
